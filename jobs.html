@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./buttons.js" defer></script>
+    <script src="./job_error.js" defer></script>
+    <title>Job</title>
+</head>
+
+
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="./home.html">
+                <img id="logo" src="./assets/images/yamato_japanese_logo.png" alt="yamato's logo">
+            </a>
+            <div id="open">
+                <button class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div id="options">
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./location.html">Hours & Location</a>
+            <a href="./jobs.html">Jobs</a>
+        </div>
+    </header>
+
+
+    <main class="main-content"
+        style="display: grid; grid-template-areas: 'header header' 'form benefits'; grid-template-columns: 3fr 6fr">
+        <section id="job-info" style="grid-area: header">
+            <p>Yamato Japanese Restaurant is continuously looking for motivated, dedicated,
+                honest, and energetic individuals to join our team. The Yamato Family has been serving the Dunn
+                community
+                with a long-standing tradition of quality. Our commitment to providing great food and service has
+                helped to create a well-respected loyalty with our guests within our community.
+            </p>
+        </section>
+        <section id="job-form" style="grid-area: form;">
+            <form target="_blank" method="get">
+                <div>
+                    <label for="name">Name - <i>Required</i></label>
+                    <span class="error-label">Please enter a value</span>
+                    <input class="text-input" type="text" id="name" name="name" placeholder="Enter full name...">
+                </div>
+
+                <div>
+                    <label for="email">Email - <i>Required</i></label>
+                    <span class="error-label">Please enter a value</span>
+                    <input class="text-input" type="text" id="email" name="email" placeholder="example@gmail.com">
+                </div>
+
+                <div>
+                    <label for="phone-number">Phone Number - <i>Required</i></label>
+                    <span class="error-label">Please enter a value</span>
+                    <input class="text-input" type="text" id="phone-number" name="phone-number"
+                        placeholder="###-###-####">
+                </div>
+
+                <div>
+                    <label for="resume">Resume</label>
+                    <input type="file" id="resume" name="resume">
+                </div>
+
+            </form>
+            <div id="submit-btn-container">
+                <button type="button" id="submit-btn">
+                    <p id="btnText">Submit</p>
+                    <div class="check-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+        </section>
+
+        <section style="grid-area: benefits; text-align: center; font-size: 30px">
+            <p>Employee Compensation Program includes:
+                <br>
+                <br>
+                -Competitive Salaries
+                <br>
+                -Bonus Programs
+                <br>
+                -Medical Insurance<br>
+                -Dental Insurance<br>
+                -Vacation Pay<br>
+                -Meal Discounts
+            </p>
+        </section>
+
+    </main>
+</body>
+
+</html>

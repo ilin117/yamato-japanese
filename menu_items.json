@@ -1,0 +1,271 @@
+{
+    "Bento Box": [
+        {
+            "id": 81,
+            "name": "Hibachi or Teriyaki Steak",
+            "price": 13.5
+        },
+        {
+            "id": 82,
+            "name": "Yaki Steak",
+            "price": 13.5
+        },
+        {
+            "id": 83,
+            "name": "Hibachi or Teriyaki Chicken",
+            "price": 12.5
+        },
+        {
+            "id": 84,
+            "name": "Yaki Chicken",
+            "price": 12.5
+        },
+        {
+            "id": 85,
+            "name": "Hibachi or Teriyaki Shrimp",
+            "price": 13.5
+        }
+    ],
+    "Side Orders": [
+        { "id": 40, "name": "Vegetables", "price": 4.75 },
+        { "id": 41, "name": "Zucchini & Onions", "price": 1.95 },
+        { "id": 42, "name": "Mushrooms", "price": 1.95 },
+        { "id": 43, "name": "Broccoli", "price": 1.95 },
+        { "id": 44, "name": "Sweet Carrots", "price": 1.95 },
+        { "id": 45, "name": "Soba", "price": 4.25 },
+        { "id": 46, "name": "Japanese Fried Rice", "price": 3.95 },
+        { "id": 47, "name": "Seafood or Ginger Sauce (4 oz)", "price": 0.75 },
+        { "id": 48, "name": "Seafood or Ginger Sauce (12 oz)", "price": 2.95 },
+        { "id": 49, "name": "Seafood or Ginger Sauce (16 oz)", "price": 3.75 },
+        { "id": 50, "name": "Grilled Chicken", "price": 5.5 },
+        { "id": 51, "name": "Grilled Steak", "price": 6.5 },
+        { "id": 52, "name": "Grilled Tilapia", "price": 5.95 },
+        { "id": 53, "name": "Grilled Shrimp", "price": 6.5 },
+        { "id": 54, "name": "Grilled Scallops", "price": 9.5 },
+        { "id": 55, "name": "Grilled Jumbo Shrimp", "price": 7.25 },
+        { "id": 56, "name": "Grilled Salmon", "price": 7.95 },
+        { "id": 57, "name": "Filet Mignon", "price": 11.5 },
+        { "id": 58, "name": "Katsu", "price": 5.5 }
+    ],
+    "Kids Menu": [
+        {
+            "id": 59,
+            "name": "Kids Teriyaki Chicken Or Hibachi Chicken",
+            "price": 5.95
+        },
+        { "id": 60, "name": "Kids Shrimp", "price": 6.25 },
+        { "id": 61, "name": "Chicken Tenders", "price": 5.95 },
+        {
+            "id": 62,
+            "name": "Kids Teriyaki Steak or Hibachi Steak",
+            "price": 6.25
+        }
+    ],
+    "Appetizers": [
+        {
+            "id": 1,
+            "name": "Gyoza",
+            "description": "Japanese pork dumplings, fried or steamed",
+            "price": 4.25
+        },
+        {
+            "id": 2,
+            "name": "Shumai",
+            "description": "Japanese shrimp dumplings, fried or steamed",
+            "price": 4.75
+        },
+        {
+            "id": 3,
+            "name": "Assorted Tempura",
+            "description": "Battered fried jumbo shrimp and vegetables",
+            "price": 5.95
+        },
+        {
+            "id": 4,
+            "name": "Vegetable Tempura",
+            "description": "Assortment of fried vegetables",
+            "price": 4.95
+        },
+        { "id": 5, "name": "Shrimp Tempura (6)", "price": 6.75 },
+        { "id": 6, "name": "Chicken Tempura (6)", "price": 5.75 },
+        { "id": 7, "name": "Yamato Spring Roll (5)", "price": 4.95 },
+        { "id": 8, "name": "Crab Rangoons (6)", "price": 3.95 }
+    ],
+    "Soups & Salads": [
+        { "id": 8, "name": "House Salad", "price": 1.95 },
+        { "id": 9, "name": "Chicken Salad", "price": 7.25 },
+        { "id": 10, "name": "Shrimp Salad", "price": 7.5 },
+        { "id": 11, "name": "Clear Japanese Soup", "price": 1.5 },
+        { "id": 12, "name": "Miso Soup", "price": 2.5 }
+    ],
+    "Entrees": [
+        {
+            "id": 13,
+            "name": "House Vegetables",
+            "priceLunch": 6.5,
+            "priceDinner": 7.95
+        },
+        {
+            "id": 14,
+            "name": "Hibachi Chicken",
+            "priceLunch": 7.25,
+            "priceDinner": 9.25
+        },
+        {
+            "id": 15,
+            "name": "Teriyaki Chicken",
+            "priceLunch": 7.25,
+            "priceDinner": 9.25
+        },
+        {
+            "id": 16,
+            "name": "Yaki Chicken",
+            "priceLunch": 7.5,
+            "priceDinner": 9.75
+        },
+        {
+            "id": 17,
+            "name": "Chicken Katsu",
+            "priceLunch": 7.25,
+            "priceDinner": 9.25
+        },
+        {
+            "id": 18,
+            "name": "Filet Mignon",
+            "priceLunch": 13.95,
+            "priceDinner": 17.95
+        },
+        {
+            "id": 19,
+            "name": "Hibachi Steak",
+            "priceLunch": 7.95,
+            "priceDinner": 10.75
+        },
+        {
+            "id": 20,
+            "name": "Teriyaki Steak",
+            "priceLunch": 7.95,
+            "priceDinner": 10.75
+        },
+        {
+            "id": 21,
+            "name": "Yaki Steak",
+            "priceLunch": 8.5,
+            "priceDinner": 10.95
+        },
+        {
+            "id": 22,
+            "name": "Grilled Tilapia",
+            "priceLunch": 7.5,
+            "priceDinner": 9.95
+        },
+        {
+            "id": 23,
+            "name": "Grilled Shrimp",
+            "priceLunch": 7.95,
+            "priceDinner": 10.75
+        },
+        {
+            "id": 24,
+            "name": "Jumbo Shrimp",
+            "priceLunch": 10.5,
+            "priceDinner": 13.75
+        },
+        {
+            "id": 25,
+            "name": "Grilled Scallop",
+            "priceLunch": 11.75,
+            "priceDinner": 15.95
+        },
+        {
+            "id": 26,
+            "name": "Grilled Salmon",
+            "priceLunch": 10.5,
+            "priceDinner": 14.5
+        }
+    ],
+    "Combinations": [
+        {
+            "id": 27,
+            "name": "Steak & Chicken",
+            "priceLunch": 12.75,
+            "priceDinner": 14.99
+        },
+        {
+            "id": 28,
+            "name": "Steak & Shrimp",
+            "priceLunch": 13.25,
+            "priceDinner": 15.99
+        },
+        {
+            "id": 29,
+            "name": "Steak & Scallop",
+            "priceLunch": 15.95,
+            "priceDinner": 17.99
+        },
+        {
+            "id": 30,
+            "name": "Steak & Tilapia",
+            "priceLunch": 13.25,
+            "priceDinner": 14.99
+        },
+        {
+            "id": 31,
+            "name": "Shrimp & Chicken",
+            "priceLunch": 12.75,
+            "priceDinner": 14.99
+        },
+        {
+            "id": 32,
+            "name": "Shrimp & Scallop",
+            "priceLunch": 15.95,
+            "priceDinner": 17.99
+        },
+        {
+            "id": 33,
+            "name": "Tilapia & Shrimp",
+            "priceLunch": 13.25,
+            "priceDinner": 14.99
+        },
+        {
+            "id": 34,
+            "name": "Tilapia & Scallop",
+            "priceLunch": 15.95,
+            "priceDinner": 17.99
+        },
+        {
+            "id": 35,
+            "name": "Tempura & Steak",
+            "priceLunch": 12.95,
+            "priceDinner": 15.99
+        },
+        {
+            "id": 36,
+            "name": "Tempura & Chicken",
+            "priceLunch": 12.5,
+            "priceDinner": 15.5
+        },
+        {
+            "id": 37,
+            "name": "Tempura & Shrimp",
+            "priceLunch": 12.95,
+            "priceDinner": 15.99
+        },
+        {
+            "id": 38,
+            "name": "Tempura & Scallop",
+            "priceLunch": 15.5,
+            "priceDinner": 17.99
+        },
+        {
+            "id": 39,
+            "name": "Tempura & Tilapia",
+            "priceLunch": 12.5,
+            "priceDinner": 15.5
+        }
+    ],
+    "Imperial Dinner": [
+        { "id": 71, "name": "IDF Filet, Shrimp & Chicken", "price": 24.95 },
+        { "id": 72, "name": "IDS Steak, Shrimp & Chicken", "price": 18.95 }
+    ]
+}

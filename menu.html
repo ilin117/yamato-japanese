@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="./buttons.js" defer></script>
+    <title>Menu</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="display_menu.js"></script>
+    <script>
+        $(function () {
+            $("#selectable").selectable({
+                stop: function () {
+                    const result = $("#select-result").empty();
+                    const selected = $(".ui-selected", this).text().trim();
+
+                    result.text(selected);
+                    $(".lunch-items, .dinner-items").hide();
+                    $(".entrees p, .combinations p").remove();
+
+
+                    if (selected === "Lunch") {
+                        $(".lunch-items").fadeIn();
+
+                        menuData["Entrees"]?.forEach((item) => {
+                            $(".entrees").append(
+                                `<p>${item.id}. ${item.name}......$${item.priceLunch}</p>`
+                            );
+                        });
+                        menuData["Combinations"]?.forEach((item) => {
+                            $(".combinations").append(
+                                `<p>${item.id}. ${item.name}......$${item.priceLunch}</p>`
+                            );
+                        });
+                    } else if (selected === "Dinner") {
+                        $(".dinner-items").fadeIn();
+
+                        menuData["Entrees"]?.forEach((item) => {
+                            $(".entrees").append(
+                                `<p>${item.id}. ${item.name}......$${item.priceDinner}</p>`
+                            );
+                        });
+                        menuData["Combinations"]?.forEach((item) => {
+                            $(".combinations").append(
+                                `<p>${item.id}. ${item.name}......$${item.priceDinner}</p>`
+                            );
+                        });
+                    }
+                }
+            });
+        });
+
+
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="./home.html">
+                <img id="logo" src="./assets/images/yamato_japanese_logo.png" alt="yamato's logo">
+            </a>
+            <div id="open">
+                <button class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div id="options">
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./location.html">Hours & Location</a>
+            <a href="./jobs.html">Jobs</a>
+        </div>
+    </header>
+
+    <main class="main-content"
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <div id="menu">
+            <section id="menu-buttons">
+                <p id="feedback">
+                    <span>You've selected:</span> <span id="select-result">none</span>
+                </p>
+
+                <ol id="selectable">
+                    <li class="ui-widget-content">Lunch</li>
+                    <li class="ui-widget-content">Dinner</li>
+                </ol>
+            </section>
+
+            <section id="menu-items">
+                <div id="col-one" style="grid-template-areas: a;">
+                    <div class="lunch-items" style="display: none;">
+                        <section class="appetizers">
+                            <h2>APPETIZERS</h2>
+                        </section>
+                        <section class="soups-salads">
+                            <h2>SOUPS & SALADS</h2>
+                        </section>
+                        <section class="entrees">
+                            <h2>ENTREES</h2>
+                        </section>
+                        <section class="bento-box">
+                            <h2>BENTO BOX</h2>
+                        </section>
+                    </div>
+
+                    <div class="dinner-items" style="display: none;">
+                        <section class="appetizers">
+                            <h2>APPETIZERS</h2>
+                        </section>
+                        <section class="soups-salads">
+                            <h2>SOUPS & SALADS</h2>
+                        </section>
+                        <section class="entrees">
+                            <h2>ENTREES</h2>
+                        </section>
+                        <section class="bento-box">
+                            <h2>BENTO BOX</h2>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="col-two" style="grid-area: b;">
+                    <div class="lunch-items" style="display: none;">
+                        <section class="side-orders">
+                            <h2>SIDE ORDERS</h2>
+                        </section>
+                        <section class="kids-menu">
+                            <h2>KIDS MENU</h2>
+                        </section>
+                    </div>
+
+                    <div class="dinner-items" style="display: none;">
+                        <section class="side-orders">
+                            <h2>SIDE ORDERS</h2>
+                        </section>
+                        <section class="kids-menu">
+                            <h2>KIDS MENU</h2>
+                        </section>
+                    </div>
+                </div>
+
+                <div id="col-three">
+                    <div class="lunch-items" style="display: none;">
+                        <section class="combinations">
+                            <h2>COMBINATIONS</h2>
+                        </section>
+                    </div>
+
+                    <div class="dinner-items" style="display: none;">
+                        <section class="combinations">
+                            <h2>COMBINATIONS</h2>
+                        </section>
+                        <section class="imperial-dinner">
+                            <h2>IMPERIAL DINNER</h2>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>

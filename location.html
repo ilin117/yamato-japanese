@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./buttons.js" defer></script>
+    <title>Hours & Location</title>
+</head>
+
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="./home.html">
+                <img id="logo" src="./assets/images/yamato_japanese_logo.png" alt="yamato's logo">
+            </a>
+            <div id="open">
+                <button class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div id="options">
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./location.html">Hours & Location</a>
+            <a href="./jobs.html">Jobs</a>
+        </div>
+
+        <!-- <nav id="navbar" style="justify-content: space-between;">
+            <a href="./home.html">
+                <img id="logo" src="./assets/images/yamato_japanese_logo.png" alt="yamato's logo">
+            </a>
+            <div style="font-size: large;">
+                <a href="./menu.html">Menu</a>
+                <a href="./about.html">About</a>
+                <a href="./location.html">Hours & Location</a>
+                <a href="./jobs.html">Jobs</a>
+                <a href="./order_online.html">Order Online</a>
+            </div>
+        </nav> -->
+    </header>
+
+    <main class="main-content">
+        <section id="hours-location">
+            <h2>Hours & Location</h2>
+            <address>
+                <a href="https://maps.app.goo.gl/mn6wmVMjZRFerPLE6" target="_blank">
+                    1903 W Cumberland St <br>
+                    Dunn, NC 28334
+                </a>
+                <br>
+                <a href="tel:9108923378">(910) 892-3378</a>
+            </address>
+
+            <div>
+                <p><strong>Monday:</strong> Closed</p>
+                <p><strong>Tuesday - Thursday:</strong> 11AM - 9:30PM</p>
+                <p><strong>Friday - Saturday:</strong> 11AM - 10:30PM</p>
+                <p><strong>Sunday:</strong> 11:30AM - 9:30PM</p>
+            </div>
+        </section>
+
+        <section id="map-container">
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.6019808542874!2d-78.6298551!3d35.3158701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ab815868b82597%3A0x730416f643a71122!2sYamato%20Japanese%20House%20of%20Steak!5e0!3m2!1sen!2sus!4v1740591084828!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+</body>
+
+</html>

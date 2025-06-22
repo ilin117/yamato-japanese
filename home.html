@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./buttons.js" defer></script>
+    <!-- <script src="./observer.js" defer></script> -->
+    <title>Yamato's Japanese Steakhouse</title>
+</head>
+
+
+<body id="body">
+    <header>
+        <nav id="navbar">
+            <a href="./home.html">
+                <img id="logo" src="./assets/images/yamato_japanese_logo.png" alt="yamato's logo">
+            </a>
+            <div id="open">
+                <button class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div id="options">
+            <a href="./menu.html">Menu</a>
+            <a href="./about.html">About</a>
+            <a href="./location.html">Hours & Location</a>
+            <a href="./jobs.html">Jobs</a>
+        </div>
+    </header>
+
+    <main class="main-content" style="font-size: 40px; flex-direction: column;">
+        <section id="slideshow-container">
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="2000">
+                <img
+                    src="https://media.gettyimages.com/id/1778334092/video/cooking-japanese-wagyu-beef-meat-bbq-teppanyaki.jpg?s=640x640&k=20&c=g4iP0kDHbCiXaW4aVPgi-JyjJc8JSX0fLmSeu_BNvbQ=">
+                <img src="https://www.shutterstock.com/shutterstock/videos/1100065659/thumb/1.jpg?ip=x480">
+                <img
+                    src="https://le-cdn.hibuwebsites.com/821b934d0d3d4732867f6fe4b86f0018/dms3rep/multi/opt/kabu-japanese-steakhouse-and-sushi-hero-home-1920w.jpg">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/0b/2e/d3/this-is-the-love-boat.jpg?w=900&h=500&s=1"
+                    alt="">
+                <img src="https://comres.heroonlineorders.com/res//storeWebPicRes/JapaneseStyle/pic_1.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <span>Welcome to Yamato's Japanese Steakhouse</span>
+            </div>
+        </section>
+
+
+        <section>
+            <div>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">Explore our full selection of
+                    Japanese dishes, from hibachi
+                    favorites to fresh appetizers and specialty boxes.</p>
+                <a class="home-btn" href="menu.html" data-aos="fade-up" data-aos-delay="200">
+                    See Menu
+                </a>
+            </div>
+
+            <div>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">Learn more about Yamato's story,
+                    our passion for Japanese
+                    cuisine, and the team behind every dish.</p>
+
+                <a class="home-btn" href="about.html" data-aos="fade-up" data-aos-delay="200">
+                    See About
+                </a>
+            </div>
+
+            <div>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">Find our restaurant location,
+                    get directions, and check our
+                    opening hours to plan your visit.</p>
+                <a class="home-btn" href="location.html" data-aos="fade-up" data-aos-delay="200">
+                    See Hours & Locations
+                </a>
+            </div>
+
+            <div>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">Looking to join our team?
+                    Discover current job openings and
+                    what it's like working at Yamato.</p>
+                <a class="home-btn" href="jobs.html" data-aos="fade-up" data-aos-delay="200">
+                    See Jobs
+                </a>
+            </div>
+
+            <div>
+                <p data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="500">
+                    Enjoy!
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script>
+        $(window).on('load', function () {
+            AOS.init();
+            setTimeout(() => {
+                AOS.refresh();
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
